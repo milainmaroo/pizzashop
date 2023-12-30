@@ -1,0 +1,52 @@
+.contact {
+  display: flex;
+  height: 90vh;
+  width: 100%;
+}
+
+.contact-img {
+  flex: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  /* border: 1px solid red; */
+  padding-left: 25px;
+}
+
+.contact-us h1 {
+  font-size: 40px;
+  font-weight: lighter;
+  text-align: left;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form label {
+  padding-bottom: 10px;
+}
+
+#contact-form input, textarea {
+  border: none;
+  border-bottom: 1px solid #121619;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-size: 15px;
+}
+
+.contact-us button {
+  background-color: #121619;
+  color: #fff;
+  padding: 10px 13px;
+  cursor: pointer;
+}
