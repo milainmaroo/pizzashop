@@ -1,0 +1,16 @@
+.home {
+  width: 100%;
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  align-items: flex-start;
+  /* padding: 20px; */
+}
