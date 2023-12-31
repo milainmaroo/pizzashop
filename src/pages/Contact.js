@@ -23,7 +23,7 @@ function Contact() {
             required
             rows='6'
           ></textarea>
-          <button type='submit'>Submit</button>
+          <button type='submit'>Send Message</button>
         </form>
       </div>
     </div>

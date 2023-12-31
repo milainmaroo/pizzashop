@@ -29,6 +29,7 @@
 #contact-form {
   display: flex;
   flex-direction: column;
+  width: 70%;
 }
 
 #contact-form label {
@@ -49,4 +50,5 @@
   color: #fff;
   padding: 10px 13px;
   cursor: pointer;
+  width: 120px;
 }
