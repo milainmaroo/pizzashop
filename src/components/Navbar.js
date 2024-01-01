@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
+import Logo from '../assets/pizzaLogo.png'
 import { Link } from 'react-router-dom'
 import ReorderIcon from '@mui/icons-material/Reorder'
-import Logo from '../assets/pizzaLogo.png'
-
 import '../styles/Navbar.css'
 
 function Navbar() {
@@ -16,12 +15,18 @@ function Navbar() {
     <div className='navbar'>
       <div className='logo' id={openLinks ? 'open' : 'close'}>
         <img src={Logo} alt='pizza logo' />
+        <div className='hidden-links'>
+          <Link to='/'> Home </Link>
+          <Link to='/menu'> Menu </Link>
+          <Link to='/about'> About </Link>
+          <Link to='/contact'> Contact </Link>
+        </div>
       </div>
       <div className='info'>
-        <Link to='/'>Home</Link>
-        <Link to='/menu'>Menu</Link>
-        <Link to='/about'>About</Link>
-        <Link to='/contact'>Contact</Link>
+        <Link to='/'> Home </Link>
+        <Link to='/menu'> Menu </Link>
+        <Link to='/about'> About </Link>
+        <Link to='/contact'> Contact </Link>
         <button onClick={toggleNavbar}>
           <ReorderIcon />
         </button>

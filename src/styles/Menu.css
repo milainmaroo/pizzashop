@@ -54,3 +54,15 @@
 .menu-item h1, p {
   margin-left: 20px;
 }
+
+@media only screen and (max-width: 1300px) {
+  .menu-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menu-list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,36 +1,107 @@
 .navbar {
+  width: 100%;
+  height: 100px;
   background-color: #121619;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+}
+
+.navbar .logo {
+  flex: 50%;
+  height: 100%;
+  display: flex;
   align-items: center;
-  padding: 0 70px;
-  position: sticky;
-  top: 0;
-  z-index: 1;
+  padding-left: 150px;
 }
 
-.logo img {
-  width: 80px;
-  height: 70px;
-  padding: 10px;
+.navbar .logo img {
+  width: 70px;
 }
 
-.info a {
+.navbar .info {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a {
+  color: white;
   text-decoration: none;
-  color: #fff;
-  padding: 13px;
-  font-size: 20px;
+  margin: 20px;
 }
 
-/* Responsive */
-@media only screen and (max-width: 600px) {
+.navbar .info button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar .info svg {
+  font-size: 40px;
+}
+
+.navbar #open {
+  padding-left: 0px;
+}
+.navbar #open img {
+  display: none;
+}
+
+.navbar #close img {
+  display: inherit;
+}
+
+.navbar #open .hidden-links {
+  display: inherit;
+  margin-left: 30px;
+}
+
+.navbar #close .hidden-links {
+  display: none;
+}
+
+.navbar #open a {
+  width: 70px;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar .info a {
+    width: 70px;
+  }
+  .navbar .logo {
+    padding-left: 50px;
+  }
+
   .navbar {
-    background-color: green;
+    background-color: 1px solid red;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar .info a {
+    display: none;
+  }
+
+  .navbar .info {
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+
+  .navbar .info button {
+    display: inherit;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .navbar {
-    background-color: yellow;
+  .navbar .info button {
+    display: none;
+  }
+
+  .hidden-links {
+    display: none;
   }
 }
